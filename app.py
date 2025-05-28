@@ -56,13 +56,13 @@ if uploaded_file:
 
     # Connection-level risk status based on attack_ratio thresholds
     if attack_ratio <= 0.10:
-        status = "✅ Network is SAFE"
+        status = "✅ Your Network is SAFE"
     elif attack_ratio <= 0.30:
-        status = "⚠️ Network is LOW RISK"
+        status = "⚠️ Your Network is LOW RISK"
     elif attack_ratio <= 0.50:
-        status = "⚠️ Network is MEDIUM RISK"
+        status = "⚠️ Your Network is MEDIUM RISK"
     else:
-        status = "🚨 Network is HIGH RISK - Immediate action recommended"
+        status = "🚨 Your Network is HIGH RISK - Immediate action recommended"
 
     st.markdown(f"## Connection Status: {status}")
 
